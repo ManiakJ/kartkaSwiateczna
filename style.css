@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("https://img.freepik.com/darmowe-zdjecie/piekna-koncepcja-wigilii-z-miejsca-na-kopie_23-2148703318.jpg");
+    background-size: cover;
+}
+
+.kartka {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 3s;
+
+    -webkit-box-shadow: -2px 40px 44px 12px rgba(0, 0, 0, 1);
+-moz-box-shadow: -2px 40px 44px 12px rgba(0, 0, 0, 1);
+box-shadow: -2px 40px 44px 12px rgba(0, 0, 0, 1);
+}
+  input#Otworz {
+    display: none;
+}
+  
+.przod {
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height:600px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .3s;
+
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-christmas-christmas-card-simple-stereoscopic-image_44673.jpg");
+    background-size: cover;
+}
+  
+.srodek {
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    height: 600px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+
+    background-image: url("https://e7.pngegg.com/pngimages/912/190/png-transparent-christmas-snowflake-red-background-thumbnail.png");
+    background-size: cover;
+}
+  
+.Otworz {
+    position: absolute;
+    width: 400px;
+    height:600px;
+    left:0;
+    top:0;
+    background-color: transparent;
+    z-index:6;
+    cursor: pointer;
+}
+  
+#Otworz:checked ~ .przod {
+  transform: rotateY(-155deg);
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+}
+  
+#Otworz:checked ~ .przod:before {
+  z-index:5;
+}
+
+.text{
+    text-align: center;
+    margin-top: 40%;
+    font-family: 'Mountains of Christmas';font-size: 60px;font-style: italic;color: white;
+    padding: 5%;
+}
+
+.naglowekRzyczenia{
+    font-family: "Mountains of Christmas"; font-size: 60px;color: white;
+    padding: 10%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.zyczenia{
+    font-family: "Mountains of Christmas"; font-size: 30px;color: white;
+    padding: 10%;
+    text-align: center;
+
+}
