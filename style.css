@@ -74,15 +74,15 @@ box-shadow: -2px 40px 44px 12px rgba(0, 0, 0, 1);
 
 .text{
     text-align: center;
-    margin-top: 40%;
-    font-family: 'Mountains of Christmas';font-size: 60px;font-style: italic;color: white;
+    margin-top: 30%;
+    font-family: 'Mountains of Christmas';font-size: 30px;font-style: italic;color: white;
     padding: 5%;
 }
 
 .naglowekRzyczenia{
     font-family: "Mountains of Christmas"; font-size: 60px;color: white;
     padding: 10%;
-    padding-bottom: 1%;
+    margin-top: 15%;
     text-align: center;
 }
 
@@ -90,5 +90,5 @@ box-shadow: -2px 40px 44px 12px rgba(0, 0, 0, 1);
     font-family: "Mountains of Christmas"; font-size: 30px;color: white;
     padding: 10%;
     text-align: center;
-
+    margin-top: 30%;
 }
